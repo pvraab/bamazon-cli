@@ -7,7 +7,7 @@ SELECT
     a.department_id,
     a.department_name,
     a.overhead_costs,
-    b.product_sales,
+    SUM(b.product_sales) product_sales,
     SUM(b.product_sales) - a.overhead_costs total_profit
 FROM
     departments a,
