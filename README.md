@@ -19,7 +19,7 @@ Create an Amazon-like storefront with a MySQL backend and an inquirer CLI fronte
   - npm install - to install all of the Node.js required packages as described in package.json
   - node bamazonCustomer.js - this will run the Customer app
   - node bamazonManager.js - this will run the Manger app
-  - node bamazonSupervisor.js - this will run the Manger app
+  - node bamazonSupervisor.js - this will run the Supervisor app
 
 ### Challenges
 
@@ -27,7 +27,7 @@ This was a pretty straightforward application to develop. The use of a view to d
 
 ### Detailed Functionality and Results
 
-This application uses a MySQL database to store information (see the appendix for the relevant SQL scripts).
+This application uses a MySQL database to structure and store information for this application (see the appendix for the relevant SQL scripts).
 
 - Use a MySQL Database called bamazon.
 - One table inside of that database is called products.
@@ -44,6 +44,8 @@ This application uses a MySQL database to store information (see the appendix fo
     - department_id (unique id for each department)
     - department_name (name of department)
     - overhead_costs (the overhead cost of each department)
+
+![](C:\Users\Paul\BootCamp\HomeWork\HW12\bamazon-cli\images\image13.gif)
 
 Three Node applications are used to view and manage the data in these tables.
 
