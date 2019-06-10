@@ -45,7 +45,7 @@ This application uses a MySQL database to structure and store information for th
     - department_name (name of department)
     - overhead_costs (the overhead cost of each department)
 
-![](../images/image13.gif)
+![](./images/image13.gif)
 
 Three Node applications are used to view and manage the data in these tables.
 
