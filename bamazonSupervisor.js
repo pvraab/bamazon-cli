@@ -73,10 +73,11 @@ function viewProductSalesByDepartment() {
     connection.query(query, function (err, res) {
         var table = new Table;
         res.forEach(function (product) {
-            table.cell('Product Id', product.department_id)
+            table.cell('Department Id', product.department_id)
             table.cell('Name', product.department_name)
-            table.cell('Price, USD', product.overhead_costs, Table.number(2))
-            table.cell('Quantity', product.total_profit, Table.number(2))
+            table.cell('Overhead Costs', product.overhead_costs, Table.number(2))
+            table.cell('Product Sales', product.product_sales, Table.number(2))
+            table.cell('Total Profit', product.total_profit, Table.number(2))
             table.newRow()
         })
         console.log(table.toString())
